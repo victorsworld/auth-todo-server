@@ -4,6 +4,7 @@ const jwtValidate = async (req, res, next) => {
   try {
     if (req.headers && req.headers.authorization) {
       let token = req.headers.authorization;
+      console.log(token)
       
       let slicedToken = token.split(' ')[1];
       

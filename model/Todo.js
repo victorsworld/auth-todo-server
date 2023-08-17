@@ -8,7 +8,7 @@ const todoSchema = new mongoose.Schema({
   description: { type: String, required: true },
   priority: {
     type: String,
-    enump: ['low', 'medium', 'high'],
+    enum: ['low', 'medium', 'high'],
     default: 'medium',
   },
   completedDate: { type: Date },

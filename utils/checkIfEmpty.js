@@ -12,7 +12,7 @@ const checkIfEmpty = (res, req, next) => {
   if (Object.keys(errObj).length > 0) {
     return res
       .status(401)
-      .json({ succes: false, message: 'error', error: errObj });
+      .json({ success: false, message: 'error', error: errObj });
   } else {
     next();
   }
